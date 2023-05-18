@@ -1,5 +1,6 @@
 
 
+# 一个预测房价的AI
 # 这是final project，已经删除了大量不必要的代码，只保留了建模和执行预测功能的代码，想看更详细的过程移步test.py
 
 
@@ -27,8 +28,8 @@ pd.options.display.max_columns = 50
 URL = "https://raw.githubusercontent.com/ageron/handson-ml2/master/datasets/housing/housing.tgz"
 
 
-# -------------------------获取资源-----------------------------------------------
-
+# --------------------------------获取资源----------------------------------------------------------
+# --------------这是按照本人主机上的相对路径创建/寻找资源的，若有需要，请自行改动本地url--------------
 def load_housing_data(url=URL):
     dataPath = Path("datasets/housing/housing.tgz")
     if not dataPath.is_file():
